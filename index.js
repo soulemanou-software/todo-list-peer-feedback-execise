@@ -1,6 +1,12 @@
 import './styles/index.css';
-import Task from './Task';
 
+ class Task {
+    constructor(description, completed, index) {
+      this.description = description;
+      this.completed = completed;
+      this.index = index;
+    }
+  }
 const listContainer = document.querySelector('.list-container');
 const inputField = document.querySelector('input');
 const tasks = document.querySelector('.tasks');
